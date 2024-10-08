@@ -1,0 +1,274 @@
+/* медленный скролл*/
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: black;
+}
+/*настройка скролбара*/
+body::-webkit-scrollbar{
+    width: 4px;
+}
+body::-webkit-scrollbar-track{
+    background: #000000;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #944AF2;
+    border-radius: 20px;
+   
+}
+/*стили для главного меню*/
+header{
+    display: flex; 
+    align-items: center; /*выравнивание по центру по вертикали*/
+    justify-content: space-between; /*раскидываем по сторонам*/
+    padding: 0 150px 0 150px;
+    background-color: black;
+    color: white;
+}
+.menu-ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    color: rgb(177, 177, 177);
+}
+li a:hover{
+    color: white;
+}
+.logo{
+    font-size: 20px;
+}
+.Connection{
+    color: rgb(177, 177, 177);
+}
+.Connection:hover{
+    color: white;
+}
+/*первая страница*/
+.title{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 513px;
+    margin:50px 300px 0 150px;
+}
+.title h2{
+    align-items: center;
+    height: 140px;
+    font-size: 50px;
+}
+.title a{
+    text-decoration: none;
+    color: white;
+    width: 140px;
+    padding: 10px;
+    background:  linear-gradient( to left, #CA59FF, #CA59FF, #944AF2);
+    text-align: center;
+    border-radius: 10px;
+    font-size: 17px;
+    margin-top: 20px;
+    transition: .5s;
+    background-size: 200%;
+}
+.title a:hover{
+    background-position: right;
+}
+.fone{
+    position: absolute;
+    z-index: -1;
+    right: 300px;
+    top: 30px;
+}
+/*граница первой и второй страницы*/
+.Watermark{
+    display: flex;
+    align-items: center; /*выравнивание по центру по вертикали*/
+    justify-content: space-between;
+    color: white;
+}
+.Watermark p{
+    padding: 0 40px 0 40px;
+}
+/*настройка границы*/
+hr{
+    color: #944AF2;
+    background-color: #944AF2;
+}
+/*вторая страница*/
+.abouy-us-title h2{
+    color: #944AF2;
+    margin: 60px 0 0 150px;
+}
+.abouy-us-title h3{
+    color: white;
+    margin-left: 150px;
+}
+.team-info{
+    color: white;
+    display: flex;
+    align-items: center; /*выравнивание по центру по вертикали*/
+    justify-content: center;
+    margin-top: 50px;
+}
+.team-info h3{
+    height: 10px;
+}
+.dima{
+    margin: 0 20px 0 20px;
+}
+.vani{
+    margin: 0 20px 0 20px;
+}
+.work-yers{
+    color: rgb(177, 177, 177);
+    height: 10px;
+}
+/*третья страница*/
+.services-info-one{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.services-title h2{
+    color: #944AF2;
+    margin: 50px 0 0 150px;
+}
+.services-title h3{
+    color: white;
+    margin-left: 150px;
+}
+.services-info-one div{
+    margin: 50px 30px 0 30px;
+    height: 200px;
+    width: 200px;
+    border: solid #944AF2 2px;
+    padding: 30px;
+    border-radius: 40px;
+    background-color: rgb(19, 19, 19);
+}
+.services-info-one div h4{
+    height: 10px;
+}
+ .services-info-one div p{
+    height: 100px;
+}
+.services-info-one div a{
+    width: 70px;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    color: white;
+    border-bottom: solid #944AF2;
+    padding-bottom: 3px;
+}
+.services-info-one div a:hover{
+    border-bottom: solid #CA59FF;
+}
+.services-info-two{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .services-info-two div{
+    margin: 50px 30px 0 30px;
+    height: 200px;
+    width: 200px;
+    border: solid #944AF2 2px;
+    padding: 30px;
+    border-radius: 40px;
+    background-color: rgb(19, 19, 19);
+}
+.services-info-two div h4{
+    height: 10px;
+}
+ .services-info-two div p{
+    height: 100px;
+}
+.services-info-two div a{
+    width: 70px;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    color: white;
+    border-bottom: solid #944AF2;
+    padding-bottom: 3px;
+}
+.services-info-two div a:hover{
+    border-bottom: solid #CA59FF;
+}
+/*четвертая страница*/
+ul{
+    list-style: none;
+}
+ul:last-child li h4::before{
+    color: #CA59FF;
+    content: "\2714\0020";
+}
+.question-answer{
+    color: white;
+}
+.question-answer-title{
+    margin: 50px 0 50px 150px;
+}
+.question-answer-title h2{
+    color: #944AF2;
+}
+.question-answer-info{
+    margin: 10px 0 50px 200px;
+}
+.question-answer-info p{
+    padding-right: 200px;
+    color: rgb(177, 177, 177);
+}
+/*контакты*/
+.contact-title{
+    color: white;
+    margin-top: 500px;
+}
+ .contact-title h2{
+    margin: 50px 0 0 150px;
+    color: #944AF2;
+    padding-top: 50px;
+}
+.contact-title h3{
+    color: white;
+    margin-left: 150px;
+}
+.contact-info p{
+    margin-left: 150px;   
+}
+footer{
+    padding-top: 400px;
+    margin: 150px 0 0 150px;
+    color: white;
+}
+.footer a{
+    color: white;
+}
+footer a img{
+    padding: 0 20px 0 0 ;
+}
+ .footer a:hover{
+    color: #CA59FF;
+    
+}
+.footer img{
+    
+    color: #944AF2;
+    
+
+}
